@@ -68,3 +68,44 @@ Real-world to OSI model
 Your eyes
 
 Application: https://mail.google.com
+
+## PDU (Protocol Data Unit)
+
+Transmission Units
+a different group of data at different OSI layers
+
+Ethernet operates on a frame of data
+it doesn't care what's inside
+
+IP operates on a packet of data
+inside is TCP or UDP, but IP doens't really care
+
+TCP ord UDP
+TCP segment
+UDP datagram
+
+Encapsulation and Decapsulation
+When a data is being transmitted. Encapsulation and Decapsulation process is happening
+
+TCP flags
+the header describes or identifies the payload
+
+The TCP header contains important control information
+includes a set of bits called TCP flags
+
+The flags control the payload
+SYN-synchronize sequence numbers
+PHH-push the data to the application without buffering
+RST-reset the connection
+FIN-last packet from the sender
+
+Maximun IP packet to transmit
+but not fragment
+
+fragmentation slows things down
+losing a fragment loses an entire packet
+requires overhead along the path
+
+Difficult to know the MTU all the way through the path
+Automated methods are often innacurate
+Especially when ICMP is filtered
